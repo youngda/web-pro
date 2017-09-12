@@ -1,0 +1,174 @@
+﻿web基础知识
+	Internet
+	  因特网 互联网
+        实际上就是许多计算机组成的网络结构
+        WEB
+	 运行在Internet最流行的程序
+        WEB工作原理
+	 B/S   浏览器/服务器
+	  Browser
+          Server
+	 C/S   客户端/服务器
+          Client
+	  Server
+         区别：
+		B/S  服务器端升级，浏览器不用升级
+ 		C/S  服务器端升级，浏览器需要升级
+WEB相关技术：   HTML，     CSS，    Javascript(Js)
+	     做网页结构    样式         特效
+WEB组成部分
+	浏览器   凤姐   (凤姐先和奥巴马见面，规定交流语言)
+	服务器   奥巴马
+	HTTP协议：规定页面怎么传输(超文本传输协议)
+web服务器：
+	功能：
+	   1.接收客户端请求，并且给出相应
+	   2.具有一定的安全性
+ 	产品：
+	   1.Apache（65%+）
+	   2.Tomcat
+	   3.IIS
+	    ...
+web浏览器：
+	功能：
+	   1.代替用户发送请求
+ 	产品：
+	   IE
+	   火狐
+	   谷歌
+	   欧朋
+	   Safari
+	    ...
+	 内核：解析html,CSS，JS
+HTML：Hyper Text Markup Language
+      超级   文本  标记   语言
+文本：普通文本
+超文本：文本，图片，视频，视频。
+HTML语法规范：
+	<!DOCTYPE html>  --声明html5文档
+	  <html>	  --根标记
+		 <head>	  --头部信息
+		<meta charset="UTF-8"/>  --编码格式
+	        <title>凤姐网站</title>
+	        <meta name="keywords" content=""/> --关键字   --给搜索引擎看的
+	   </head>   
+	  </html>
+
+UTF-8：国际中文编码
+GBK：国内中文编码(简体，繁体)
+GBK2312：国内中文编码(简体)
+
+<a href="跳转地址" target="打开方式"></a>  超链接标记
+target：_self  自身窗口打开
+	_blank 新窗口打开
+<span></span>   没有实际意义的标记
+<br/>	  换行
+<hr/>     横线
+<div></div>     没有实际意义的标记
+区别(行元素和块元素)
+行元素：显示在一行,默认宽度是文本的宽度
+    <a></a>
+    <span></span>
+    <i></i>斜体
+    <b></b>加粗
+    <strong>凤姐</strong>
+	搜索引擎排名
+    <u><u>下划线
+    <del><del>  推荐
+    <s></s>
+块元素：独占一行,默认宽度是浏览的宽度
+    <p></p>
+    <br/>
+    <hr/>
+    <div></div>
+    <h1></h1>
+	...
+    <h6></h6>
+注释：浏览器不解析，其实就是给工作人员看的(程序员)
+	语法：<!-- 注释内容-->
+	快捷键:ctrl+shift+/
+table表格
+	<table width="500px" height="200px">
+	    <tr>
+		<td></td>
+	   </tr>
+		...
+	</table>
+table中属性
+	width
+	height
+	border
+	cellpadding  内边距  文字离边框的距离
+	cellspacing  外边距  边框离边框的距离
+	align     对齐方式  left|center|right
+tr中的属性
+	align  对齐方式  left|center|right
+td中属性
+	align  对齐方式  left|center|right
+	rowspan  合并   合并行
+	colspan  合并   合并列
+无序列表
+	语法
+	  <ul>
+		<li>第一条</li>
+		<li>第一条</li>
+		<li>第一条</li>
+	  </ul>
+有序列表
+	语法
+		<ol>
+			<li></li>
+			 ...
+		</ol>
+	属性
+		type
+		取值：1
+			  i
+			  I
+			  a
+			  A
+		start   --开始
+		取值：数值
+自定义列表
+	作用：用于图文混排
+	语法：
+		<dl>
+			<dt>项目名称</dt>
+			<dd>项目描述</dd>
+		</dl>
+图像
+	语法：
+		<img src="URL" alt="图片描述"/>
+		URL
+			1.绝对路径
+				组成：http协议+主机名+文件目录+文件名
+				协议：http://
+				主机名:www.hnnhmn.com
+				文件目录：bg
+				图片：daohang.png
+
+
+			2.相对路径
+			3.跟相对路径
+http://www.baidu.com/Images/1.jpg
+
+
+
+
+
+
+
+
+
+CSS高级
+
+====================================================
+sublime text3
+
+
+458300215
+
+专业+姓名
+
+
+
