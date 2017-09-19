@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" id ="li">
+	<style type="text/css">
+		div{
+			background-color: #300;
+			width: 100px;
+			height: 50px;
+		}
+		.box{
+			background-color: red;		
+		}
+	</style>
+	<script type="text/javascript">
+		function setText(argument) {
+			// body...
+			var sObj = document.getElementById('inputtext');
+			sObj.value = "逗比"
+		}
+		function ledOn(){
+			var sObj = document.getElementById("li");
+			sObj.href='w.css'
+		}
+		function ledOff(){
+			var sObj = document.getElementById('li')
+			sObj.href = 'b.css'
+		}
+		function jisuan(){
+			var shu1Obj = document.getElementById('shu1');
+			var shu2Obj = document.getElementById('shu2');
+			var shu3Obj = document.getElementById('shu3');
+			var shu = parseFloat(shu1Obj.value) + parseFloat(shu2Obj.value);
+			shu3Obj.value = shu;
+		}
+		function setColor(){
+			var sObj = document.getElementById('divColor');
+			sObj.className = 'box';
+		}
+		function setThreeColor(color){
+			var sObj = document.getElementById('threeColor');
+			sObj.style.background = color;
+		}
+	</script>
+</head>
+<body>
+<input type="text" name="" value="12313213" id="inputtext">
+<input type="button" name="" value="改文字" onclick="setText()">
+<br>
+<input type="button" name="" value="开灯" onclick="ledOn()">
+<input type="button" name="" value="关灯" onclick="ledOff()">
+<br>
+<input type="text" name="" id="shu1">+<input type="text" name="" id="shu2">=<input type="text" name="" id="shu3">
+<input type="button" name="" value="计算" onclick="jisuan()">
+<br>
+<div id="divColor">
+	
+</div><input type="button" name="" value="变色" onclick="setColor()">
+<div id="threeColor">
+	
+</div>
+<input type="button" name="" value="黄色" onclick="setThreeColor('yellow')">
+<input type="button" name="" value="绿色" onclick="setThreeColor('green')">
+<input type="button" name="" value="黑色" onclick="setThreeColor('black')">
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>鼠标滑过事件</title>
+	<style>
+		#div1{
+			width: 150px;
+			background-color: #ccc;		
+			display: none;
+		}
+	</style>
+	<script type="text/javascript">
+		function fi(argument) {
+			var sObj = document.getElementById('div1');
+			sObj.style.display = 'block';
+			// body...
+		}
+		function f2(){
+			var sObj = document.getElementById('div1');
+			sObj.style.display = 'none'
+		}
+	</script>
+</head>
+<body>
+<input type="checkbox">
+<span onmouseover="fi()" onmouseout="f2()">十天免登陆</span>
+<div id="div1">
+	请不要公共场合输入
+</div><br>
+<input type="button" name="button" value="点击我" onclick="alert('你滚，别点我')">
+</body>
+</html>

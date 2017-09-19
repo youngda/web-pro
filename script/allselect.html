@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>all-select</title>
+	<script type="text/javascript">
+	window.onload=function (argument) {
+		// body...
+		var btnObj = document.getElementById('btn');
+		var notObj = document.getElementById('notBtn');
+		var divObj = document.getElementById('div1')
+		var cObj = divObj.getElementsByTagName('input');
+		btnObj.onclick=function(){
+			for (var i = 0; i < cObj.length; i++) {
+				cObj[i].checked="checked";
+			}
+		}
+		notObj.onclick=function(){
+			for (var i = 0; i < cObj.length; i++) {
+				cObj[i].checked=false;
+			}
+		}
+	}
+	</script>
+</head>
+<body>
+<input type="button" name="" value="全选" id="btn">
+<input type="button" name="" value="取消全选" id="notBtn"><br>
+<div id="div1">
+	<input type="checkbox" name=""><br>
+	<input type="checkbox" name=""><br>
+	<input type="checkbox" name=""><br>
+	<input type="checkbox" name=""><br>
+	<input type="checkbox" name=""><br>
+	<input type="checkbox" name=""><br>
+	<input type="checkbox" name=""><br>
+	<input type="checkbox" name="" checked="checked"><br>
+</div>
+
+</body>
+</html>

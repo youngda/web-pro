@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		div{
+			width: 100px;
+			height: 50px;
+			background-color: #289;
+		}
+		.box{
+			background:red;
+		}
+	</style>
+	<script type="text/javascript">
+		function setRed(argument) {
+			// body...
+			var sObj = document.getElementById('div1');
+			sObj.style.background = 'red';
+		}
+		function setGreen(argument) {
+			// body...
+			var sObj = document.getElementById('div1');
+			sObj.style.background = 'green';
+		}
+		function setColor(){
+			var sObj = document.getElementsByTagName('div');
+			for (var i = 1; i < sObj.length; i++) {
+				sObj[i].style.background = '#257';
+			}
+		}
+	</script>
+</head>
+<body>
+<input type="button" name="" value="变黄" onclick="setRed()">
+<input type="button" name="" value="变绿" onclick="setGreen()">
+<div id="div1">
+	
+</div>
+<input type="button" name="" value="变色" onclick="setColor()">
+<div>
+	
+</div>
+<br>
+<div>
+	
+</div>
+<br>
+<div>
+	
+</div>
+<br>
+<div>
+	
+</div>
+</body>
+</html>
