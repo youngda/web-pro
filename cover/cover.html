@@ -2,10 +2,26 @@
 <html>
 <head>
 	<title>cover</title>
+	<script type="text/javascript">
+		window.onload=function(argument) {
+			// body...
+			var liObj = ul.getElementsByTagName('a');
+			for (var i = 0; i < liObj.length; i++) {
+				liObj[i].onclick=function(){
+					this.parentNode.style.display = 'none';
+				}
+				
+			}
+
+		}
+	</script>
 </head>
 <body>
 <ul id="ul">
-	<li><a href=""></a></li>
+	<li>床前明月光<a href="javascript:">隐藏</a></li>
+	<li>疑是地上霜<a href="javascript:">隐藏</a></li>
+	<li>抬头望明月<a href="javascript:">隐藏</a></li>
+	<li>低头思故乡<a href="javascript:">隐藏</a></li>
 </ul>
 </body>
 </html>
