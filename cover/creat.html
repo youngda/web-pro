@@ -5,15 +5,20 @@
 	<script type="text/javascript">
 		window.onload=function(argument) {
 			// body...
-			var btnObj = document.getElementById('btn1');
+			var btnCObj = document.getElementById('btn1');
+			var btnDObj = document.getElementById('btn2');
 			var txtObj = document.getElementById('txt');
 			var uObj = document.getElementById('ul1');
-			btnObj.onclick=function(argument) {
+			btnCObj.onclick=function(argument) {
 				// body...
-				var creatLiObj =document.createElement('li');
+				var creatLiObj = document.createElement('li');
 				var liObj = uObj.getElementsByTagName('li');
 				creatLiObj.innerHTML = txtObj.value;
 				uObj.insertBefore(creatLiObj,liObj[0]);
+			}
+			btnDObj.onclick=function(argument){
+				var liObj = uObj.getElementsByTagName('li');
+				uObj.removeChild(liObj[0]);
 			}
 		}
 	</script>
@@ -21,6 +26,7 @@
 <body>
 <input type="text" name="" id="txt">
 <input type="button" name="" value="创建" id="btn1">
+<input type="button" name="" value="删除" id="btn2">
 <ul id="ul1">
 </ul>
 </body>
