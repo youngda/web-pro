@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>小型计算器</title>
+	<script>
+		function jisuan(){
+			var i1=document.getElementById('input1').value;
+			var i2=document.getElementById('input2').value;
+			var i3Obj=document.getElementById('input3');
+			var i3=parseInt(i1)+parseInt(i2);/*2 + 3*/
+			i3Obj.value=i3;
+		}
+	</script>
+</head>
+<body>
+	<input type="text" id="input1">
+	+
+	<input type="text" id="input2">
+	=
+	<input type="text" id="input3">
+	<input type="button" value="计算" onclick="jisuan()">
+</body>
+</html>

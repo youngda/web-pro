@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>	</title>
+	<style>	
+		div{
+			width: 200px;
+			height: 100px;
+			background: pink;
+			margin-top: 15px;
+		}
+	</style>
+	<script>	
+		function a(){
+			var dObj=document.getElementsByTagName('div');
+			/*dObj[1].style.background='yellow';*/
+			/*alert(dObj.length);*//*有多少个div*/
+			for(var i=0;i<dObj.length;i++){
+				dObj[i].style.background='yellow';
+			}
+		}
+	</script>
+</head>
+<body>
+<input type="button" value="点我" onclick="a()">
+	<div>	</div>
+	<div>	</div>
+	<div>	</div>
+	<div>	</div>
+	<div>	</div>
+	<div>	</div>
+	<div>	</div>
+	<div>	</div>
+	<div>	</div>
+</body>
+</html>

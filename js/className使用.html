@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div{
+			width: 200px;
+			height: 200px;
+			background: gray;
+		}
+		.box{background: yellow;}
+	</style>
+	<script>
+		function setYellow(){
+			var a = document.getElementById('div1');
+			a.className='box';
+			//保留关键字
+		}
+	</script>
+</head>
+<body>
+	<input type="button" value="变黄" onclick="setYellow()">
+	<div id="div1">
+		
+	</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>开灯关灯</title>
+	<link rel="stylesheet" href="1.css" id="l1">
+	<script>
+		function guandeng(){
+			var lObj=document.getElementById('l1');
+			lObj.href='2.css';
+		}
+		function kaideng(){
+			var lObj=document.getElementById('l1');
+			lObj.href='1.css';
+		}
+	</script>
+</head>
+<body>
+	<input type="button" value="开灯" onclick="kaideng()">
+	<input type="button" value="关灯" onclick="guandeng()">
+</body>
+</html>

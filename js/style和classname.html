@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>	style和classname</title>
+	<style>	
+		div{
+			width: 200px;
+			height: 100px;
+			background: black;
+		}
+		.box{
+			background: red;
+		}
+	</style>
+	<script>	
+			function b (){
+					var a =document.getElementById('div1');
+					a.style.background='yellow';
+			}
+			function c(){
+				var a =document.getElementById('div1');
+					a.className='box';
+			}
+	</script>
+</head>
+<body>
+	<input type="button" value="变黄" onclick="b()">
+	<input type="button" value="变红" onclick="c()">
+	<div id="div1">
+		
+	</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<style>	
+		div{
+			width: 200px;
+			height: 200px;
+			background: pink;
+			margin-top: 10px;
+			display: none;
+		}
+		.active{
+			background: red;
+		}
+	</style>
+	<title>	选项卡</title>
+	<script>	
+		window.onload=function(){
+			var btn=document.getElementsByTagName('input');
+			var dObj=document.getElementsByTagName('div')
+			for(var i=0;i<btn.length;i++){
+				btn[i].index=i;
+				alert(i);
+				btn[i].onclick=function(){
+					for(var n=0;n<btn.length;n++){
+						btn[n].className='';
+						dObj[n].style.display='none';
+					}
+					this.className='active';
+					/*this.index*/
+					dObj[this.index].style.display='block';
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	<input type="button" value="体育" class="active">
+	<input type="button" value="NBA">
+	<input type="button" value="体育视频">
+	<div style="display: block;">这是体育专区</div>
+	<div>这是NBA专区</div>
+	<div>这是体育视频专区</div>
+</body>
+</html>

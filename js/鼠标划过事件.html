@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<style>
+		#div1{
+			width: 200px;
+			height: 30px;
+			background: #ccc;
+			display: none;
+		}
+	</style>
+	<title>鼠标划过事件</title>
+</head>
+<body>
+	<input type="checkbox">
+	<span onmouseover="document.getElementById('div1').style.display='block'" onmouseout="document.getElementById('div1').style.display='none'">十天内免登陆</span>
+	<div id="div1">
+		请不要公共场合登录
+	</div><br>
+	<input type="button" value="点击我" onclick="alert('讨厌,别点我')">
+</body>
+</html>

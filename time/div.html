@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>div</title>
+	<script type="text/javascript">
+		window.onload=function(argument) {
+			// body...
+			var oDov1 = document.getElementById('div1');
+			var oDov2 = document.getElementById('div2');
+			var time = 'null';
+			oDov1.onmousemove=function(argument) {
+				// body...
+				oDov2.style.display = 'block';
+			}
+			oDov1.onmouseout=function(argument) {
+				// body...
+				time = setTimeout(function(argument) {
+					oDov2.style.display = 'none';
+				},1000)
+			}
+			oDov2.onmousemove=function(argument) {
+				clearTimeout(time);
+				// oDov2.style.display = 'block';
+			}
+			oDov2.onmouseout=function(){
+				time = setTimeout(function(argument) {
+					oDov2.style.display = 'none';
+				},1000)
+			}
+		}
+	</script>
+</head>
+<body>
+<div id="div1" style="width: 80px; height: 80px;border-radius: 60px; background-color:#278;float: left;">	</div>
+<div id="div2" style="width: 10px; height: 250px; background-color: #abc; display: none;float: left;border-radius: 10px; text-align: center;font-size: 100px;">
+<img src="images/pp.png"></div>	
+</body>
+</html>s

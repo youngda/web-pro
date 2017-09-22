@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>time display</title>
+	<style type="text/css">
+		.timeStyle{
+			font-size: 50px;
+			background-size: 200px;
+			background-color: "red";
+			margin-top: 60px;
+			text-align: center;
+		}
+	</style>
+	<script type="text/javascript">
+	function addZore(argument) {
+		// body...
+		if (argument<=9) {
+			argument = '0' + argument.toString();
+		}
+		else{
+			argument =argument.toString();
+		}
+		return argument;
+	}
+		function getDate(argument) {
+			// body...
+			var divOb = document.getElementById('div1');
+			var oImg = divOb.getElementsByTagName('img');
+			var date = new Date();
+			var hStr = date.getHours();
+			var mStr = date.getMinutes();
+			var sStr = date.getSeconds();
+			sStr = addZore(sStr);
+			mStr = addZore(mStr);
+			hStr = addZore(hStr);
+			var strAll = hStr + mStr + sStr;
+			for (var i = 0; i < oImg.length; i++) {
+				oImg[i].src = 'images/' + strAll[i] + '.png';
+			}
+			setInterval(getDate,1000);
+		}
+		window.onload=function(argument) {
+			getDate();
+		}
+	</script>
+</head>
+<body style="font-size: 30px;margin: 30px;background: #265; text-align: center;">
+<div class="timeStyle" id="div1">
+	<img src="images/0.png">
+	<img src="images/2.png"> ：  
+	<img src="images/2.png">
+	<img src="images/3.png"> ： 
+	<img src="images/4.png"> 
+	<img src="images/0.png">
+</div>
+<br>
+	<img src="images/pp.png">
+</body>
+</html>

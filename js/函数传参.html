@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<style>
+		div{
+			width: 200px;
+			height: 100px;
+			background: gray;
+		}
+	</style>
+	<title>函数传参</title>
+	<script>
+		/*function setYellow(){
+			var a=document.getElementById('div1');
+			a.style.background='yellow';
+		}
+		function setGreen(){
+			var a=document.getElementById('div1');
+			a.style.background='green';
+		}
+		function setBlue(){
+			var a=document.getElementById('div1');
+			a.style.background='blue';
+		}*/
+		function setColor(color){
+			var a = document.getElementById('div1');
+			a.style.background=color;
+		}
+	</script>
+</head>
+<body>
+	<input type="button" value="变黄" onclick="setColor('yellow')">
+	<input type="button" value="变绿" onclick="setColor('green')">
+	<input type="button" value="变蓝" onclick="setColor('blue')">
+	<div id="div1" >
+		
+	</div>
+</body>
+</html>
